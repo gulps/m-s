@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  outline: none;
+}
+body {
+  background-color: #efeff4;
+}
+.title {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  line-height: 60px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid #d9dadf;
+}
+.title .prev {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+.title .prev img {
+  width: 10px;
+}
+.title .prev {
+  font-size: 14px;
+}
+.title .next {
+  position: absolute;
+  font-size: 14px;
+  width: 40px;
+  height: 20px;
+  line-height: 20px;
+  right: 5px;
+  bottom: 10px;
+  color: #ea5404;
+}
+p.txt {
+  font-size: 14px;
+  color: #b7b7b8;
+  padding: 8px;
+}
+.items_01 {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #e3e3e8;
+  height: 50px;
+}
+.items_01 .user {
+  flex: 1;
+  background: url("../../../public/img/reservationXq/content_img_user@2x.png") no-repeat center;
+  background-size: 40px;
+}
+.items_01 .user_txt {
+  flex: 5;
+}
+.items_01 .user_txt p:nth-child(1) {
+  font-size: 14px;
+  color: #3e3e3e;
+  margin: 10px 4px;
+}
+.items_01 .user_txt p:nth-child(2) {
+  font-size: 12px;
+  color: #7b7b7b;
+  margin: -8px 4px;
+}
+.items_01 .tel {
+  position: relative;
+  flex: 1;
+  background: url("../../../public/img/reservationXq/content_icon_call@2x.png") no-repeat center;
+  background-size: 24px;
+}
+.items_01 .tel .border {
+  position: absolute;
+  width: 1px;
+  height: 30px;
+  background-color: #f0f0f0;
+  left: 0;
+  top: 50%;
+  margin-top: -15px;
+}
+.items_02 {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #e3e3e8;
+  height: 64px;
+}
+.items_02 p {
+  display: block;
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #3e3e3e;
+}
+.items_02 .txt_all {
+  margin-top: -10px;
+}
+.items_02 .txt_all .txt {
+  display: inline-block;
+  width: 40%;
+  font-size: 12px;
+  margin-left: 10px;
+  color: #7b7b7b;
+}
+.items_03 {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #e3e3e8;
+  height: 45px;
+}
+.items_03 span {
+  font-size: 16px;
+  line-height: 46px;
+  padding: 10px;
+}

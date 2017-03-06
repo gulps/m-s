@@ -1,0 +1,353 @@
+@import 'common/navbar.styl'
+@import "common/body.styl"
+a
+  text-decoration none
+.bg
+  position fixed
+  width 100%
+  height 60px
+  background-color #3C3C3B
+  opacity 0
+  z-index 3
+.title
+  text-align center
+  height 50px
+  line-height 70px
+  font-size 20px
+  color #FFF
+  z-index 3
+.city
+  position fixed
+  background url("../../public/img/indexPage/nav_icon_down@2x.png") no-repeat 32px 8px
+  background-size 20%
+  padding 2px
+  width 50px
+  height 20px
+  color #FFF
+  line-height 20px
+  text-align left
+  font-size 12px
+  left 10px
+  top 25px
+  z-index 4
+.search
+  position relative
+  width 94%
+  height 34px
+  background-color #FFF
+  margin-top 5px
+  border-radius 5px
+  margin-left 3%
+  z-index 3
+  transition all 0.5s
+  &.change
+    position fixed
+    width 60%
+    heigh 34px
+    margin-left  20%
+    top 12px
+    transition all 0.5s
+  input
+    position absolute
+    background url("../../public/img/indexPage/banner_icon_search@2x.png") no-repeat 22% 8px
+    background-size 5%
+    width 300px
+    height 32px
+    left 50%
+    margin-left -150px
+    top 50%
+    margin-top -16px
+    text-align center
+    line-height 32px
+    border 0
+.slide_box
+  margin-top -90px
+  width 100%
+  overflow hidden
+  .slider_container
+    overflow hidden
+    .slider_block
+      float left
+      width 375px
+      height 320px
+      &:nth-child(1)
+        background url("../../public/img/indexPage/banner_img@2x.png") no-repeat
+        background-size 100%
+      &:nth-child(2)
+        background url("../../public/img/indexPage/banner_img@2x.png") no-repeat
+        background-size 100%
+      &:nth-child(3)
+        background url("../../public/img/indexPage/banner_img@2x.png") no-repeat
+        background-size 100%
+      &:nth-child(4)
+        background url("../../public/img/indexPage/banner_img@2x.png") no-repeat
+        background-size 100%
+.point_box
+  position relative
+  top -20px
+  z-index 1
+  height 16px
+  text-align center
+  .point_block
+    display inline-block
+    width 16px
+    height 16px
+    background url("../../public/img/indexPage/banner_icon_point_nor@2x.png") no-repeat center
+    background-size 10px
+    &.active
+      background url("../../public/img/indexPage/banner_icon_point_press@2x.png") no-repeat center
+      background-size 10px
+.select
+  position relative
+  width 100%
+  height 44px
+  border-bottom 1px solid #EBEBEE
+  background-color #ffffff
+  z-index 6
+  &.active
+    position fixed
+    top 60px
+  .select_down
+    position absolute
+    top 45px
+    overflow hidden
+    background-color #F0F0F0
+    width 100%
+    height 0
+    transition all 0.2s
+    &.height
+      height 360px
+      overflow auto
+      transition all 0.5s
+    ul
+      li
+        color #424242
+        height 44px
+        line-height 44px
+        text-align center
+        &.active
+          background-color #FFF
+      .ipt
+        position relative
+        div
+          display inline-block
+        .txt_box
+          display inline-block
+          width 60px
+          height 30px
+          text-align center
+          line-height 30px
+          background-color #FFF
+          border-radius 4px
+          border 1px solid #E3E4E6
+          input
+            width 80%
+            height 25px
+            border 0
+        .ok
+          position absolute
+          font-size 12px
+          color #424242
+          width 50px
+          border 1px solid #E3E4E6
+          height 30px
+          text-align center
+          line-height 30px
+          background-color #FFF
+          border-radius 4px
+          right 50%
+          margin-right -150px
+          top 50%
+          margin-top -16px
+    .left
+    .right
+      height 100%
+      overflow auto
+      width 50%
+      float left
+      .txt1
+        li
+          padding-left 20px
+          text-align left
+      .txt2
+        li
+          padding-left 20px
+          text-align left
+        &.active
+          display none
+    .left
+      li
+        font-size 14px
+        font-weight bold
+        &.active
+          background-color #ffffff
+    .right
+      background-color #ffffff
+      li
+        font-size 14px
+        border-bottom 1px solid #F0F0F0
+        &:nth-child(1)
+          color #ea5404
+  .select_box
+    overflow hidden
+    li
+      float left
+      height 44px
+      color #727272
+      text-align center
+      line-height 36px
+      font-size 14px
+      width 20%
+      &:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4)
+        background url("../../public/img/indexPage/content_icon02_nor@2x.png") no-repeat center 30px
+        background-size 8px
+      &.active
+        background url("../../public/img/indexPage/content_icon02_press@2x.png") no-repeat center 30px
+        background-size 8px
+        color #ea5404
+      &:nth-child(5)
+        background url("../../public/img/indexPage/content_icon01_nor@2x.png") no-repeat center 12px
+        background-size 20px
+.items
+  display flex
+  height 114px
+  width 100%
+  background-color #FFF
+  margin-bottom 5px
+  position relative
+  .pic
+    flex 3
+    background url("../../public/img/indexPage/content_img_list@2x.png") no-repeat center
+    background-size 90%
+  .txt
+    flex 5
+    padding 16px 4px
+    .left
+      float left
+      width 52%
+      div
+        margin-bottom 2px
+        &:nth-child(1)
+          font-weight bold
+        &:nth-child(2)
+          font-size 13px
+          color #727272
+        &:nth-child(3)
+          width 50px
+          height 16px
+          text-align center
+          line-height 16px
+          padding 2px 4px
+          border 1px solid #ea5404
+          border-radius 3px
+          color #ea5404
+          font-size 12px
+        &:nth-child(4)
+          span
+            font-size 12px
+            color #727272
+            &:nth-child(1)
+              font-size 14px
+              color #ea5404
+              font-weight bold
+    .icon
+      position absolute
+      width 30px
+      height 30px
+      top 15px
+      right 10px
+      background url("../../public/img/indexPage/collect_icon_nor@2x.png") no-repeat top right
+      background-size 70%
+      &.active
+        background url("../../public/img/indexPage/collect_icon_press@2x.png") no-repeat top right
+        background-size 70%
+    .icon_txt
+      position absolute
+      width 70px
+      height 20px
+      font-size 12px
+      color #727272
+      right 5px
+      bottom 10px
+.mark
+  display none
+  &.active
+    position fixed
+    width 100%
+    background-color #000
+    opacity 0.2
+    z-index 4
+    top 464px
+    display block
+    height 100%
+.go_top
+  position fixed
+  width 48px
+  height 48px
+  border-radius 50%
+  background url("../../public/img/indexPage/content_btn_back@2x.png") no-repeat
+  background-size 100%
+  right 18px
+  bottom 60px
+  display none
+  z-index 6
+.more_send
+  position fixed
+  width 100%
+  height 100%
+  top 0
+  left 0
+  background-color #000000
+  background rgba(0,0,0,1)
+  transform-origin center bottom
+  transform scale(0)
+  transition all 0.2s
+  z-index 21
+  &.active
+    transform-origin center bottom
+    transform scale(1)
+    transition all 0.2s
+  .send_need
+    position absolute
+    bottom 100px
+    width 90px
+    height 90px
+    border-radius 50%
+    background url("../../public/img/release/publish_btn02@2x.png") no-repeat center
+    background-size 80%
+    left 20%
+    z-index 2
+    &::after
+      position absolute
+      height 20px
+      color #FFF
+      left 20%
+      font-size 12px
+      bottom -20px
+      content '发布需求'
+  .send_home
+    position absolute
+    bottom 100px
+    width 90px
+    height 90px
+    border-radius 50%
+    background url("../../public/img/release/publish_btn01@2x.png") no-repeat center
+    background-size 80%
+    right 20%
+    &::after
+      position absolute
+      height 20px
+      color #FFF
+      right 20%
+      font-size 12px
+      bottom -20px
+      content '发布房源'
+  .close
+    position absolute
+    width 50px
+    height 50px
+    bottom 5px
+    left 50%
+    margin-left -25px
+    background url("../../public/img/release/publish_close_icon@2x.png") no-repeat center
+    background-size 30%

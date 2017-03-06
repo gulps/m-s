@@ -1,0 +1,225 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  outline: none;
+}
+body {
+  background-color: #efeff4;
+}
+.title {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  line-height: 60px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid #d9dadf;
+}
+.title .prev {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 50px;
+}
+.title .prev img {
+  width: 10px;
+}
+.navbar {
+  position: fixed;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #f3f3f4;
+  z-index: 20;
+}
+.navbar ul {
+  overflow: hidden;
+  text-align: center;
+}
+.navbar ul li {
+  position: relative;
+  width: 20%;
+  height: 60px;
+  text-align: center;
+  font-size: 16px;
+  color: #b9b9b9;
+  float: left;
+}
+.navbar ul li .navbar_txt {
+  color: #ea5404;
+}
+.navbar ul li div {
+  position: absolute;
+  left: 50%;
+  margin-left: -17px;
+  top: 5px;
+}
+.navbar ul li div img {
+  height: 22px;
+}
+.navbar ul li .more {
+  margin-left: -28px;
+}
+.navbar ul li .more img {
+  margin-left: 4px;
+  height: 40px;
+  width: 40px;
+}
+.navbar ul li span {
+  line-height: 80px;
+  margin-left: -10px;
+}
+.del {
+  position: absolute;
+  color: #fff;
+  width: 86px;
+  background-color: #f00;
+  height: 112px;
+  right: 1px;
+  top: 1px;
+  text-align: center;
+  line-height: 112px;
+  z-index: 1;
+}
+.items {
+  position: relative;
+  overflow: hidden;
+  height: 114px;
+  background-color: #fff;
+  width: 100%;
+  margin-top: 10px;
+  border-bottom: 1px solid #d9dadf;
+  z-index: 2;
+}
+.items .room {
+  float: left;
+  width: 40%;
+}
+.items .room img {
+  margin: 10px 10px;
+  height: 80px;
+}
+.items .txt {
+  position: relative;
+  padding: 10px 10px;
+}
+.items .txt p:nth-child(1) {
+  color: #b2b2b2;
+  font-size: 13px;
+}
+.items .txt p:nth-child(2) {
+  margin-top: 10px;
+  color: #727272;
+  font-size: 14px;
+  text-indent: 1em;
+}
+.items .txt p:nth-child(3) {
+  margin-top: 4px;
+  color: #ff9f38;
+  font-size: 12px;
+}
+.items .txt .icon {
+  position: absolute;
+  width: 70px;
+  height: 20px;
+  background: url("../../../public/img/reservation/content_icon@2x.png") no-repeat left;
+  background-size: 12px;
+  right: 26px;
+  top: 7px;
+}
+.items .txt .icon span {
+  color: #ccc;
+  padding-left: 20px;
+  font-size: 12px;
+}
+.items .txt .get {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  height: 14px;
+  font-size: 12px;
+  background-color: #ea5404;
+  width: 36px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+}
+.items .txt .get_in {
+  position: absolute;
+  right: 10px;
+  bottom: 6px;
+  font-size: 12px;
+  display: none;
+}
+.more_send {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  background: #000;
+  transform-origin: center bottom;
+  transform: scale(0);
+  transition: all 0.2s;
+  z-index: 21;
+}
+.more_send.active {
+  transform-origin: center bottom;
+  transform: scale(1);
+  transition: all 0.2s;
+}
+.more_send .send_need {
+  position: absolute;
+  bottom: 100px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: url("../../img/release/publish_btn02@2x.png") no-repeat center;
+  background-size: 80%;
+  left: 10%;
+  z-index: 2;
+}
+.more_send .send_need::after {
+  position: absolute;
+  height: 20px;
+  color: #fff;
+  left: 20%;
+  font-size: 12px;
+  bottom: -20px;
+  content: '发布需求';
+}
+.more_send .send_home {
+  position: absolute;
+  bottom: 100px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: url("../../img/release/publish_btn01@2x.png") no-repeat center;
+  background-size: 80%;
+  right: 10%;
+}
+.more_send .send_home::after {
+  position: absolute;
+  height: 20px;
+  color: #fff;
+  right: 20%;
+  font-size: 12px;
+  bottom: -20px;
+  content: '发布房源';
+}
+.more_send .close {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 5px;
+  left: 50%;
+  margin-left: -25px;
+  background: url("../../img/release/publish_close_icon@2x.png") no-repeat center;
+  background-size: 30%;
+}

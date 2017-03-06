@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  outline: none;
+}
+body {
+  background-color: #efeff4;
+}
+.title {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  line-height: 60px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid #d9dadf;
+}
+.title .prev {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 50px;
+}
+.title .prev img {
+  width: 10px;
+}
+p.txt {
+  font-size: 14px;
+  color: #b7b7b8;
+  padding: 8px;
+}
+.items_01 {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #e3e3e8;
+  height: 50px;
+}
+.items_01 .user {
+  flex: 1;
+  background: url("../../../public/img/reservationXq/content_img_user@2x.png") no-repeat center;
+  background-size: 40px;
+}
+.items_01 .user_txt {
+  flex: 5;
+}
+.items_01 .user_txt p:nth-child(1) {
+  font-size: 14px;
+  color: #3e3e3e;
+  margin: 10px 4px;
+}
+.items_01 .user_txt p:nth-child(2) {
+  font-size: 12px;
+  color: #7b7b7b;
+  margin: -8px 4px;
+}
+.items_01 .tel {
+  position: relative;
+  flex: 1;
+  background: url("../../../public/img/reservationXq/content_icon_call@2x.png") no-repeat center;
+  background-size: 24px;
+}
+.items_01 .tel .border {
+  position: absolute;
+  width: 1px;
+  height: 30px;
+  background-color: #f0f0f0;
+  left: 0;
+  top: 50%;
+  margin-top: -15px;
+}
+.items_02 {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #e3e3e8;
+  height: 64px;
+}
+.items_02 p {
+  display: block;
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #3e3e3e;
+}
+.items_02 .txt_all {
+  margin-top: -10px;
+}
+.items_02 .txt_all .txt {
+  display: inline-block;
+  width: 40%;
+  font-size: 12px;
+  margin-left: 10px;
+  color: #7b7b7b;
+}
+.items_03 {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #e3e3e8;
+  height: 45px;
+}
+.items_03 span {
+  font-size: 16px;
+  line-height: 46px;
+  padding: 10px;
+}
+.items_04 {
+  position: relative;
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  height: 43px;
+}
+.items_04 .left {
+  flex: 1;
+}
+.items_04 .left span {
+  text-align: center;
+  font-size: 16px;
+  display: block;
+}
+.items_04 .left span:nth-child(1) {
+  margin-top: 4px;
+}
+.items_04 .left span:nth-child(2) {
+  font-size: 12px;
+}
+.items_04 .right {
+  flex: 6;
+  text-align: right;
+}
+.items_04 .right span {
+  font-size: 14px;
+  line-height: 44px;
+  padding: 10px;
+}
+.items_04 .border {
+  position: absolute;
+  width: 96%;
+  height: 1px;
+  background-color: #e3e3e8;
+  bottom: 0;
+  right: 0;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  height: 50px;
+  border-top: 1px solid #e3e3e8;
+}
+.footer .footer_txt {
+  border-right: 1px solid #e3e3e8;
+  text-align: center;
+  flex: 1;
+}
+.footer .footer_txt:nth-child(3) {
+  border: 0;
+}
+.footer .footer_txt span {
+  line-height: 50px;
+  font-size: 16px;
+  color: #ea5404;
+}
+.call_tel {
+  position: fixed;
+  background-color: #fff;
+  width: 70%;
+  height: 110px;
+  border-radius: 8px;
+  top: 50%;
+  margin-left: 15%;
+  margin-top: -55px;
+  display: none;
+  z-index: 2;
+}
+.call_tel .top {
+  height: 64px;
+  text-align: center;
+  line-height: 64px;
+  font-size: 12px;
+  color: #424242;
+  border-bottom: 1px solid #ebebee;
+}
+.call_tel .bottom {
+  display: flex;
+  height: 40px;
+}
+.call_tel .bottom .cancel {
+  flex: 1;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  color: #646464;
+  border-right: 1px solid #ebebee;
+}
+.call_tel .bottom .ok {
+  flex: 1;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  color: #ea5404;
+}
+.mark {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #000;
+  opacity: 0.2;
+  display: none;
+}

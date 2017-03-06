@@ -1,0 +1,196 @@
+@import "../common/body.styl"
+@import "../common/navbar.styl"
+.top
+  position fixed
+  width 100%
+  top 0
+  background-color #FFF
+  padding 9px
+  z-index 5
+  border-bottom 1px solid #D9DADF
+  .title
+    display flex
+    width 258px
+    height 30px
+    margin 0 auto
+    border 1px solid #ea5404
+    border-radius 5px
+    .lis
+      position relative
+      flex 1
+      line-height 30px
+      text-align center
+      font-size 14px
+      color #ea5404
+    .lis:nth-child(1)
+      color #FFF
+      background-color #ea5404
+    .lis:nth-child(1)::before,.lis:nth-child(2)::before
+      content ''
+      position absolute
+      width 1px
+      height 30px
+      background-color #ea5404
+      right 0
+.message
+  margin-top 60px
+.notice
+  margin-top 60px
+.need
+  margin-top 60px
+  display none
+.message_items
+  position relative
+  width 94%
+  height 118px
+  background-color #FFF
+  margin 10px auto
+  border-radius 5px
+  box-shadow 0 0 5px #ccc
+  .title
+    padding-left 10px
+    height 40px
+    font-size 14px
+    line-height 40px
+    border-bottom 1px solid #D9DADF
+  .txt
+    margin-top 14px
+    padding 0 10px
+    text-indent 2em
+    font-size 12px
+    color #979797
+    p
+      display block
+      height 30px
+      overflow hidden
+  .date
+    position absolute
+    font-size 12px
+    color #cccccc
+    right 10px
+    bottom 10px
+  .date_1
+    position absolute
+    font-size 12px
+    color #cccccc
+    right 10px
+    top 10px
+.needs
+  position relative
+  width 94%
+  height 118px
+  margin 10px auto
+  background-color #ffffff
+  border-radius 5px
+  .user
+    position absolute
+    width 34px
+    height 16px
+    padding 2px 4px
+    border-radius 4px
+    right 10px
+    top 10px
+    font-size 12px
+    text-align center
+    line-height 16px
+    color #FFF
+  .date
+    position absolute
+    right 10px
+    bottom 10px
+    font-size 12px
+    color #c7c7c7
+  .head
+    overflow hidden
+    height 30px
+    line-height 46px
+    padding 0 8px
+    .title
+      height 30px
+      float left
+      line-height 46px
+      font-size 14px
+      padding-left 10px
+  .img
+    width 100%
+  .cont
+    padding 8px
+    p
+      padding 0 10px
+      font-size 12px
+      color #979797
+  .more
+    font-size 12px
+    width 100px
+    height 20px
+    text-align center
+    line-height 20px
+    background-color #EFEFF4
+    color #757576
+    margin 0 auto
+    border-radius 3px
+.navbar
+  ul
+    .li_04
+      .navbar_txt
+        color #ea5404
+.more_send
+  position fixed
+  width 100%
+  height 100%
+  top 0
+  left 0
+  background-color #000000
+  background rgba(0,0,0,1)
+  transform-origin center bottom
+  transform scale(0)
+  transition all 0.2s
+  z-index 21
+  &.active
+    transform-origin center bottom
+    transform scale(1)
+    transition all 0.2s
+  .send_need
+    position absolute
+    bottom 100px
+    width 90px
+    height 90px
+    border-radius 50%
+    background url("../../img/release/publish_btn02@2x.png") no-repeat center
+    background-size 80%
+    left 10%
+    z-index 2
+    &::after
+      position absolute
+      height 20px
+      color #FFF
+      left 20%
+      font-size 12px
+      bottom -20px
+      content '发布需求'
+  .send_home
+    position absolute
+    bottom 100px
+    width 90px
+    height 90px
+    border-radius 50%
+    background url("../../img/release/publish_btn01@2x.png") no-repeat center
+    background-size 80%
+    right 10%
+    &::after
+      position absolute
+      height 20px
+      color #FFF
+      right 20%
+      font-size 12px
+      bottom -20px
+      content '发布房源'
+  .close
+    position absolute
+    width 50px
+    height 50px
+    bottom 5px
+    left 50%
+    margin-left -25px
+    background url("../../img/release/publish_close_icon@2x.png") no-repeat center
+    background-size 30%

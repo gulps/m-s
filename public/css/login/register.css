@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style-type: none;
+}
+body {
+  background-color: #f5eeea;
+}
+body .register_top {
+  position: relative;
+  height: 50px;
+  background-color: #fff;
+  line-height: 60px;
+  font-size: 20px;
+  text-align: center;
+  color: #ea5404;
+  border-bottom: 1px solid #d9dadf;
+}
+body .register_top .prev {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+body .register_top .prev img {
+  width: 10px;
+}
+.ipt {
+  position: relative;
+  padding: 5px 0;
+  margin-top: 30px;
+  background-color: #fff;
+  border-top: 1px solid #d8d9dd;
+  border-bottom: 1px solid #d8d9dd;
+}
+.ipt .select_human {
+  position: absolute;
+  background-color: #b2b2b2;
+  width: 90%;
+  bottom: -115px;
+  left: 5%;
+  text-align: center;
+  border-radius: 5px;
+  opacity: 0;
+}
+.ipt .select_human li {
+  padding: 2px;
+  color: #fff;
+  letter-spacing: 20px;
+  border-bottom: 1px solid #fff;
+}
+.ipt .ipt_txt {
+  position: relative;
+  overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  border-bottom: 1px solid #d9dadf;
+}
+.ipt .ipt_txt .select img {
+  transform: rotate(-90deg);
+  width: 10px;
+  margin-top: 10px;
+}
+.ipt .ipt_txt .get {
+  position: absolute;
+  width: 80px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  padding: 3px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #ea5404;
+  top: 50%;
+  margin-top: -14px;
+  right: 10px;
+}
+.ipt .ipt_txt .ps_txt {
+  margin-top: 6px;
+}
+.ipt .ipt_txt .more {
+  border-color: transparent;
+}
+.ipt .ipt_txt img {
+  margin: 5px 20px;
+  width: 20px;
+}
+.ipt .ipt_txt .txt {
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: left;
+}
+.ipt .ipt_txt input {
+  font-size: 14px;
+  border: 0;
+  padding: 8px 10px;
+  width: 150px;
+}
+.ipt .ipt_txt .use,
+.ipt .ipt_txt .passwd,
+.ipt .ipt_txt .txt,
+.ipt .ipt_txt input {
+  float: left;
+}
+#key img {
+  position: relative;
+  left: 10px;
+  width: 15px;
+  margin-left: 10px;
+}
+#human {
+  border-color: transparent;
+  transition: all 0.2s;
+}
+.button {
+  width: 90%;
+  height: 50px;
+  margin: 50px auto;
+  border-radius: 8px;
+  background-color: #c7c7c7;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+}
+.footer {
+  display: block;
+  text-align: center;
+  margin-top: -30px;
+  font-size: 12px;
+  color: #7d7d7e;
+}
+.footer a {
+  color: #ea5404;
+}

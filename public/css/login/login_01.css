@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+body {
+  background-color: #f5eeea;
+}
+body .login_top {
+  position: relative;
+  height: 50px;
+  background-color: #fff;
+  line-height: 60px;
+  font-size: 20px;
+  text-align: center;
+  color: #ea5404;
+  border-bottom: 1px solid #d9dadf;
+}
+body .login_top .prev {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+body .login_top .prev img {
+  width: 10px;
+}
+.ipt {
+  padding: 5px 0;
+  margin-top: 30px;
+  background-color: #fff;
+  height: 100px;
+  border-top: 1px solid #d8d9dd;
+  border-bottom: 1px solid #d8d9dd;
+}
+.ipt .ipt_txt {
+  width: 90%;
+  overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  border-bottom: 1px solid #d9dadf;
+}
+.ipt .ipt_txt:nth-child(2) {
+  border-color: transparent;
+}
+.ipt .ipt_txt .ps_txt {
+  margin-top: 6px;
+}
+.ipt .ipt_txt img {
+  margin: 5px 0;
+  width: 20px;
+}
+.ipt .ipt_txt .txt {
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.ipt .ipt_txt input {
+  font-size: 14px;
+  border: 0;
+  padding: 8px 10px;
+  width: 150px;
+}
+.ipt .ipt_txt .use,
+.ipt .ipt_txt .passwd,
+.ipt .ipt_txt .txt,
+.ipt .ipt_txt input {
+  float: left;
+}
+.button {
+  width: 90%;
+  height: 50px;
+  margin: 50px auto;
+  border-radius: 8px;
+  background-color: #c7c7c7;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+}
+.registered {
+  display: block;
+  font-weight: bold;
+  margin: -20px 30px;
+  color: #ff8a00;
+}
+.forget {
+  display: block;
+  float: right;
+  font-weight: bold;
+  color: #6d6d6e;
+  margin-right: 30px;
+}

@@ -1,0 +1,279 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  outline: none;
+}
+body {
+  background-color: #efeff4;
+}
+.navbar {
+  position: fixed;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #f3f3f4;
+  z-index: 20;
+}
+.navbar ul {
+  overflow: hidden;
+  text-align: center;
+}
+.navbar ul li {
+  position: relative;
+  width: 20%;
+  height: 60px;
+  text-align: center;
+  font-size: 16px;
+  color: #b9b9b9;
+  float: left;
+}
+.navbar ul li .navbar_txt {
+  color: #ea5404;
+}
+.navbar ul li div {
+  position: absolute;
+  left: 50%;
+  margin-left: -17px;
+  top: 5px;
+}
+.navbar ul li div img {
+  height: 22px;
+}
+.navbar ul li .more {
+  margin-left: -28px;
+}
+.navbar ul li .more img {
+  margin-left: 4px;
+  height: 40px;
+  width: 40px;
+}
+.navbar ul li span {
+  line-height: 80px;
+  margin-left: -10px;
+}
+.top {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  padding: 9px;
+  z-index: 5;
+  border-bottom: 1px solid #d9dadf;
+}
+.top .title {
+  display: flex;
+  width: 258px;
+  height: 30px;
+  margin: 0 auto;
+  border: 1px solid #ea5404;
+  border-radius: 5px;
+}
+.top .title .lis {
+  position: relative;
+  flex: 1;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #ea5404;
+}
+.top .title .lis:nth-child(1) {
+  color: #fff;
+  background-color: #ea5404;
+}
+.top .title .lis:nth-child(1)::before,
+.top .title .lis:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 30px;
+  background-color: #ea5404;
+  right: 0;
+}
+.message {
+  margin-top: 60px;
+}
+.notice {
+  margin-top: 60px;
+}
+.need {
+  margin-top: 60px;
+  display: none;
+}
+.message_items {
+  position: relative;
+  width: 94%;
+  height: 118px;
+  background-color: #fff;
+  margin: 10px auto;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+}
+.message_items .title {
+  padding-left: 10px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  border-bottom: 1px solid #d9dadf;
+}
+.message_items .txt {
+  margin-top: 14px;
+  padding: 0 10px;
+  text-indent: 2em;
+  font-size: 12px;
+  color: #979797;
+}
+.message_items .txt p {
+  display: block;
+  height: 30px;
+  overflow: hidden;
+}
+.message_items .date {
+  position: absolute;
+  font-size: 12px;
+  color: #ccc;
+  right: 10px;
+  bottom: 10px;
+}
+.message_items .date_1 {
+  position: absolute;
+  font-size: 12px;
+  color: #ccc;
+  right: 10px;
+  top: 10px;
+}
+.needs {
+  position: relative;
+  width: 94%;
+  height: 118px;
+  margin: 10px auto;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.needs .user {
+  position: absolute;
+  width: 34px;
+  height: 16px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  right: 10px;
+  top: 10px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 16px;
+  color: #fff;
+}
+.needs .date {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 12px;
+  color: #c7c7c7;
+}
+.needs .head {
+  overflow: hidden;
+  height: 30px;
+  line-height: 46px;
+  padding: 0 8px;
+}
+.needs .head .title {
+  height: 30px;
+  float: left;
+  line-height: 46px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.needs .img {
+  width: 100%;
+}
+.needs .cont {
+  padding: 8px;
+}
+.needs .cont p {
+  padding: 0 10px;
+  font-size: 12px;
+  color: #979797;
+}
+.needs .more {
+  font-size: 12px;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  background-color: #efeff4;
+  color: #757576;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+.navbar ul .li_04 .navbar_txt {
+  color: #ea5404;
+}
+.more_send {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  background: #000;
+  transform-origin: center bottom;
+  transform: scale(0);
+  transition: all 0.2s;
+  z-index: 21;
+}
+.more_send.active {
+  transform-origin: center bottom;
+  transform: scale(1);
+  transition: all 0.2s;
+}
+.more_send .send_need {
+  position: absolute;
+  bottom: 100px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: url("../../img/release/publish_btn02@2x.png") no-repeat center;
+  background-size: 80%;
+  left: 10%;
+  z-index: 2;
+}
+.more_send .send_need::after {
+  position: absolute;
+  height: 20px;
+  color: #fff;
+  left: 20%;
+  font-size: 12px;
+  bottom: -20px;
+  content: '发布需求';
+}
+.more_send .send_home {
+  position: absolute;
+  bottom: 100px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: url("../../img/release/publish_btn01@2x.png") no-repeat center;
+  background-size: 80%;
+  right: 10%;
+}
+.more_send .send_home::after {
+  position: absolute;
+  height: 20px;
+  color: #fff;
+  right: 20%;
+  font-size: 12px;
+  bottom: -20px;
+  content: '发布房源';
+}
+.more_send .close {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 5px;
+  left: 50%;
+  margin-left: -25px;
+  background: url("../../img/release/publish_close_icon@2x.png") no-repeat center;
+  background-size: 30%;
+}

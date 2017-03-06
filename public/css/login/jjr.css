@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #efeff4;
+}
+.register_top {
+  position: relative;
+  height: 50px;
+  background-color: #fff;
+  line-height: 60px;
+  font-size: 20px;
+  text-align: center;
+  color: #ea5404;
+  border-bottom: 1px solid #d9dadf;
+}
+.register_top .prev {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+.register_top .prev img {
+  width: 10px;
+}
+p {
+  padding: 12px 20px;
+  color: #b6b6b6;
+}
+.must {
+  padding: 10px;
+  background-color: #fff;
+}
+.must .photo01 {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #878787;
+  text-align: center;
+  line-height: 80px;
+  color: #fff;
+}
+.must .photo02 {
+  width: 120px;
+  height: 80px;
+  margin: 10px auto;
+  border-radius: 5px;
+  background-color: #878787;
+  text-align: center;
+  line-height: 80px;
+  color: #fff;
+}
+.must input {
+  position: relative;
+  border: 0;
+  width: 80%;
+  border-radius: 5px;
+  margin-top: 5px;
+  left: 8%;
+  padding: 10px;
+  background-color: #efeff4;
+}
+.not_must {
+  padding: 10px;
+  background-color: #fff;
+}
+.not_must .photo03 {
+  width: 120px;
+  height: 80px;
+  margin: 5px auto;
+  border-radius: 5px;
+  background-color: #878787;
+  text-align: center;
+  line-height: 80px;
+  color: #fff;
+}
+.done {
+  width: 90%;
+  margin-top: 6px;
+  margin-left: 5%;
+  border-radius: 5px;
+  height: 50px;
+  background-color: #b2b2b2;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+}
+.registerDone {
+  position: fixed;
+  top: 50%;
+  margin-top: -75px;
+  left: 50%;
+  margin-left: -125px;
+  width: 250px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 8px;
+  display: none;
+}
+.registerDone .tip {
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
+  font-weight: bold;
+  border-bottom: 1px solid #d9dadf;
+}
+.registerDone .ok {
+  text-align: center;
+  height: 60px;
+  line-height: 70px;
+  font-size: 20px;
+  color: #ea5404;
+}

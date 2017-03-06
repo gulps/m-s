@@ -1,0 +1,17 @@
+.title {
+  position: relative;
+  height: 50px;
+  background-color: #fff;
+  line-height: 60px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid #d9dadf;
+}
+.title .prev {
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+.title .prev img {
+  width: 10px;
+}

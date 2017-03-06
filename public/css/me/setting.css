@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  outline: none;
+}
+body {
+  background-color: #efeff4;
+}
+.title {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  line-height: 60px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid #d9dadf;
+}
+.title .prev {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 50px;
+}
+.title .prev img {
+  width: 10px;
+}
+.items {
+  position: relative;
+  height: 50px;
+  border-bottom: 1px solid #d9dadf;
+  background-color: #fff;
+  padding-left: 8px;
+  margin-top: 10px;
+  line-height: 50px;
+  color: #474747;
+}
+.items .click {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  right: 0px;
+  top: 50%;
+  margin-top: -25px;
+}
+.items .cookie {
+  float: right;
+  margin-right: 30px;
+  color: #bfbfbf;
+}
+.items .img {
+  position: absolute;
+  height: 14px;
+  top: 50%;
+  margin-top: -7px;
+  right: 10px;
+}
+.items .button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -15px;
+  width: 50px;
+  height: 30px;
+  background-color: #ea5404;
+  border-radius: 20px;
+  padding: 1px;
+}
+.items .button .button_flag {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: inset 0px -5px 5px #efefef;
+}
+.quit {
+  position: relative;
+  text-align: center;
+}
+.confirm {
+  position: fixed;
+  width: 274px;
+  height: 110px;
+  top: 50%;
+  margin-top: -80px;
+  left: 50%;
+  margin-left: -137px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+  z-index: 2;
+}
+.confirm .top {
+  height: 59px;
+  text-align: center;
+  line-height: 59px;
+  font-size: 12px;
+  border-bottom: 1px solid #ebebee;
+}
+.confirm .bottom {
+  position: relative;
+  overflow: hidden;
+}
+.confirm .bottom .border {
+  position: absolute;
+  width: 1px;
+  height: 50px;
+  background-color: #ebebeb;
+  left: 50%;
+}
+.confirm .bottom .left,
+.confirm .bottom .right {
+  float: left;
+  width: 50%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+.confirm .bottom .right {
+  color: #ea5404;
+}
+.mark {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}

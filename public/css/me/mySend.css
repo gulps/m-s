@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  outline: none;
+}
+body {
+  background-color: #efeff4;
+}
+.title {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  line-height: 60px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid #d9dadf;
+}
+.title .prev {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 50px;
+}
+.title .prev img {
+  width: 10px;
+}
+.home .del {
+  position: absolute;
+  color: #ea5404;
+  width: 50px;
+  height: 20px;
+  right: 10px;
+  top: 50px;
+  z-index: 1;
+}
+.home .items {
+  position: relative;
+  overflow: hidden;
+  height: 114px;
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #d9dadf;
+  z-index: 2;
+}
+.home .items .room {
+  float: left;
+  width: 40%;
+}
+.home .items .room img {
+  margin: 10px 10px;
+  height: 90px;
+}
+.home .items .money {
+  float: left;
+  width: 106px;
+  margin: 10px 20px;
+}
+.home .items .money p:nth-child(1) {
+  color: #474747;
+  font-weight: bold;
+}
+.home .items .money p:nth-child(2) {
+  padding-top: 5px;
+  font-size: 12px;
+  color: #c7c7c7;
+}
+.home .items .money .num {
+  font-size: 16px;
+  color: #ea5404;
+  font-weight: bold;
+}
+.home .items .money .txt {
+  font-size: 12px;
+  color: #7a7a7a;
+}
+.home .items .money .location {
+  color: #ea5404;
+  border: 1px solid #ea5404;
+  border-radius: 2px;
+  font-size: 12px;
+  width: 54px;
+  padding: 2px 4px;
+  height: 16px;
+  line-height: 16px;
+  margin: 8px 0;
+  text-align: center;
+}
+.home .items .heart {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.home .items .heart .img {
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+}
+.home .items .heart .img img {
+  height: 12px;
+}
+.home .items .mon_date {
+  position: absolute;
+  bottom: 11px;
+  right: 0;
+  font-size: 12px;
+  color: #7a7a7a;
+}

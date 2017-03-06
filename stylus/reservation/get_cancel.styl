@@ -1,0 +1,132 @@
+@import "../common/body.styl"
+@import "../common/title.styl"
+.title
+  .prev
+    font-size 14px
+  .next
+    position absolute
+    font-size 14px
+    width 40px
+    height 20px
+    line-height 20px
+    right 5px
+    bottom 10px
+    color #ea5404
+p.txt
+  font-size 14px
+  color #B7B7B8
+  padding 8px
+.items_01
+  display flex
+  width 100%
+  background-color #FFF
+  border-bottom 1px solid #E3E3E8
+  height 50px
+  .user
+    flex 1
+    background url("../../../public/img/reservationXq/content_img_user@2x.png") no-repeat center
+    background-size 40px
+  .user_txt
+    flex 5
+    p
+      &:nth-child(1)
+        font-size 14px
+        color #3E3E3E
+        margin 10px 4px
+      &:nth-child(2)
+        font-size 12px
+        color #7B7B7B
+        margin -8px 4px
+  .tel
+    position relative
+    flex 1
+    background url("../../../public/img/reservationXq/content_icon_call@2x.png") no-repeat center
+    background-size 24px
+    .border
+      position absolute
+      width 1px
+      height 30px
+      background-color #F0F0F0
+      left 0
+      top 50%
+      margin-top -15px
+.items_02
+  width 100%
+  background-color #FFF
+  border-bottom 1px solid #E3E3E8
+  height 64px
+  p
+    display block
+    padding 8px 10px
+    font-size 14px
+    color #3E3E3E
+  .txt_all
+    margin-top -10px
+    .txt
+      display inline-block
+      width 40%
+      font-size 12px
+      margin-left 10px
+      color #7b7b7b
+.items_03
+  width 100%
+  background-color #FFF
+  border-bottom 1px solid #E3E3E8
+  height 45px
+  span
+    font-size 16px
+    line-height 46px
+    padding 10px
+.items_04
+  width 100%
+  background-color #FFF
+  height 170px
+  padding-top 8px
+  .check_box
+    border 1px solid #DADADA
+    width 16px
+    height 16px
+    background-color #FFF
+    border-radius 4px
+    font-size 13px
+    line-height 18px
+    margin-top 6px
+    margin-left 10px
+    &.active
+      border-color #ea5404
+      background url("../../img/reservationXq/content_list_icon_right@2x.png") no-repeat center
+      background-size 80%
+    &:nth-child(1)::after
+      content '客户不满意'
+      display inline-block
+      margin-left 30px
+      width 240px
+    &:nth-child(2)::after
+      content '已经联系客户，预约取消'
+      display inline-block
+      margin-left 30px
+      width 240px
+    &:nth-child(3)::after
+      content '其他原因'
+      display inline-block
+      margin-left 30px
+      width 240px
+  textarea
+    border-radius 3px
+    padding 4px
+    margin-left 4%
+    margin-top 10px
+    background-color #EFEFF4
+    width 90%
+.ok
+  position relative
+  width 90%
+  left 5%
+  height 40px
+  text-align center
+  line-height 40px
+  font-size 20px
+  color #FFF
+  background-color #ea5404
+  border-radius 4px
+  margin-top 4px

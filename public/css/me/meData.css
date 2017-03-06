@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  outline: none;
+}
+body {
+  background-color: #efeff4;
+}
+.title {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  line-height: 60px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid #d9dadf;
+}
+.title .prev {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 50px;
+}
+.title .prev img {
+  width: 10px;
+}
+body {
+  overflow: hidden;
+}
+.mark {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+.con {
+  margin-top: 10px;
+}
+.con .items {
+  position: relative;
+  height: 40px;
+  background-color: #fff;
+}
+.con .items .border {
+  position: absolute;
+  width: 95%;
+  height: 1px;
+  background-color: #efefef;
+  bottom: 0;
+  right: 0;
+}
+.con .items input {
+  position: absolute;
+  border: 0;
+  height: 40px;
+  width: 120px;
+  left: 160px;
+}
+.con .items span {
+  line-height: 40px;
+  padding-left: 10px;
+  color: #656565;
+}
+.con .items .items_arrow {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  text-align: right;
+  right: 10px;
+  top: 50%;
+  margin-top: -7px;
+}
+.con .items .items_arrow img {
+  height: 14px;
+}
+.pics {
+  padding-bottom: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.pics .pics_li {
+  width: 33.3%;
+  float: left;
+}
+.pics .pics_li .photo {
+  background-color: #878787;
+  width: 100px;
+  height: 64px;
+  border-radius: 8px;
+  margin: 10px auto;
+}
+.pics .pics_li .txt {
+  font-size: 12px;
+  text-align: center;
+  color: #656565;
+}
+.change_photo {
+  position: absolute;
+  width: 100%;
+  bottom: -124px;
+  z-index: 2;
+}
+.change_photo .items {
+  position: relative;
+  height: 40px;
+  background-color: #fff;
+}
+.change_photo .items .txt {
+  text-align: center;
+  color: #656565;
+}
+.change_photo .items .txt .cancel {
+  color: #ea5404;
+}
+.change_photo .items .txt span {
+  line-height: 40px;
+}
+.change_photo .items .border {
+  position: absolute;
+  width: 94%;
+  height: 1px;
+  background-color: #efefef;
+  left: 3%;
+  bottom: 0;
+}
+.change_photo .items .ipt_file {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  top: 0;
+  opacity: 0;
+}

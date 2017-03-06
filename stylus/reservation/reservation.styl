@@ -1,0 +1,136 @@
+@import "../common/body.styl"
+@import "../common/title.styl"
+@import "../common/navbar.styl"
+.del
+  position absolute
+  color #FFF
+  width 86px
+  background-color red
+  height 112px
+  right 1px
+  top 1px
+  text-align center
+  line-height 112px
+  z-index 1
+.items
+  position relative
+  overflow hidden
+  height 114px
+  background-color #FFF
+  width 100%
+  margin-top 10px
+  border-bottom 1px solid #D9DADF
+  z-index 2
+  .room
+    float left
+    width 40%
+    img
+      margin 10px 10px
+      height 80px
+  .txt
+    position relative
+    padding 10px 10px
+    p:nth-child(1)
+      color #B2B2B2
+      font-size 13px
+    p:nth-child(2)
+      margin-top 10px
+      color #727272
+      font-size 14px
+      text-indent 1em
+    p:nth-child(3)
+      margin-top 4px
+      color #FF9F38
+      font-size 12px
+    .icon
+      position absolute
+      width 70px
+      height 20px
+      background url("../../../public/img/reservation/content_icon@2x.png") no-repeat left
+      background-size 12px
+      right 26px
+      top 7px
+      span
+        color #CCC
+        padding-left 20px
+        font-size 12px
+    .get
+      position absolute
+      right 10px
+      bottom 5px
+      height 14px
+      font-size 12px
+      background-color #ea5404
+      width 36px
+      padding 2px 4px
+      border-radius 4px
+      color #FFF
+      text-align center
+    .get_in
+      position absolute
+      right 10px
+      bottom 6px
+      font-size 12px
+      display none
+.more_send
+  position fixed
+  width 100%
+  height 100%
+  top 0
+  left 0
+  background-color #000000
+  background rgba(0,0,0,1)
+  transform-origin center bottom
+  transform scale(0)
+  transition all 0.2s
+  z-index 21
+  &.active
+    transform-origin center bottom
+    transform scale(1)
+    transition all 0.2s
+  .send_need
+    position absolute
+    bottom 100px
+    width 90px
+    height 90px
+    border-radius 50%
+    background url("../../img/release/publish_btn02@2x.png") no-repeat center
+    background-size 80%
+    left 10%
+    z-index 2
+    &::after
+      position absolute
+      height 20px
+      color #FFF
+      left 20%
+      font-size 12px
+      bottom -20px
+      content '发布需求'
+  .send_home
+    position absolute
+    bottom 100px
+    width 90px
+    height 90px
+    border-radius 50%
+    background url("../../img/release/publish_btn01@2x.png") no-repeat center
+    background-size 80%
+    right 10%
+    &::after
+      position absolute
+      height 20px
+      color #FFF
+      right 20%
+      font-size 12px
+      bottom -20px
+      content '发布房源'
+  .close
+    position absolute
+    width 50px
+    height 50px
+    bottom 5px
+    left 50%
+    margin-left -25px
+    background url("../../img/release/publish_close_icon@2x.png") no-repeat center
+    background-size 30%
+
+
